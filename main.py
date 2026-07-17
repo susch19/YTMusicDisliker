@@ -62,7 +62,12 @@ def dislike_songs(yt_music: ytmusicapi, songs):
 def main():
     if len(sys.argv) < 2:
         print("Please provide artist names as comma-separated arguments.")
-        print("Example: python script.py 'The Beatles, Pink Floyd'")
+        print("Alternativly provide the channel id instead of the name. For this 'id:' has to be prefixed, so that it can be detected as an id.")
+        print("Names and ids can be mixed.")
+        print("Examples:")
+        print("python script.py 'id:UCa7IczYhKhSnhHNZ0uI93ng,id:UCrtlfQiKPeN1EboJuCESD6g'")
+        print("python script.py 'The Beatles, Pink Floyd')
+        print("python script.py 'The Beatles,id:UCrtlfQiKPeN1EboJuCESD6g')
         sys.exit(1)
     print(
 """
